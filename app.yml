@@ -1,4 +1,4 @@
-entrypoint: bundle exec rackup --port $PORT
+entrypoint: bundle exec rackup --port 8080
 env: flex
 runtime: ruby
 
