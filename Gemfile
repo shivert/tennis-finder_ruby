@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'mysql2', '~> 0.3.18'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -31,6 +31,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.5'
+  gem 'annotate'
 end
 
 group :test do
@@ -50,8 +51,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Added at 2018-03-25 14:41:15 -0400 by spencerhivert:
-gem "mysql2", "~> 0.5.0"
-
 # Added at 2018-03-25 14:41:35 -0400 by spencerhivert:
-gem "appengine", "~> 0.4.5"
+gem 'appengine', '~> 0.4.5'
+
+gem 'rack-cors'

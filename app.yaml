@@ -1,0 +1,9 @@
+entrypoint: bundle exec rails server Puma --port 8080
+env: flex
+runtime: ruby
+
+env_variables:
+  SECRET_KEY_BASE: bea06c0c02b43cfce6d16441bdf4dbdf06b71d300ba013fc30b6da9a22e8b2a625b0ab3a7a793c4c56d2f33914fae17c9eb0bc9ef6bb083482099f93264cb845
+
+beta_settings:
+  cloud_sql_instances: rails-test-199116:us-central1:test-db
